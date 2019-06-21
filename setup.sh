@@ -15,8 +15,6 @@ if [i = 1]; then
 	exit 0
 fi
 
-git clone https://github.com/k838450/dotfiles.git ./dotfiles
-
 # install deinvim
 echo "start install deinvim"
 mkdir -p ~/.cache/dein
@@ -25,5 +23,5 @@ sh ./installer.sh ~/.cache/dein
 sed -i -e '0,10' ./tmp.txt
 sed -i -e '1,10d' test.txt
 sed -i -e '36,39d' test.txt
-cp ./dotfiles/.vimrc  ~/.vimrc
+cp ./.vimrc  ~/.vimrc
 echo "success"
