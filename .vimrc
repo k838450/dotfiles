@@ -16,18 +16,18 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
 
 "Chat sheet
-let g:cheatsheet#cheat_file = '/Users/snow/.vim/cheetsheet'
+let g:cheatsheet#cheat_file = '~/.cheetsheet'
 
 
 "Tex
-let g:vimtex_compiler_progname = '/Applications/MacVim.app/Contents/bin/gvim'
-let g:vimtex_compiler_latexmk = { 'continuous' : 0 }
-let g:vimtex_quickfix_open_on_warning = 0
-let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/MacOS/Skim'
+"let g:vimtex_compiler_progname = '/Applications/MacVim.app/Contents/bin/gvim'
+"let g:vimtex_compiler_latexmk = { 'continuous' : 0 }
+"let g:vimtex_quickfix_open_on_warning = 0
+"let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/MacOS/Skim'
 
 "Mark Down
-let g:previm_open_cmd = 'open -a Safari'
-nnoremap <silent> <C-p> :PrevimOpen<CR> 
+"let g:previm_open_cmd = 'open -a Safari'
+"nnoremap <silent> <C-p> :PrevimOpen<CR> 
 
 augroup PrevimSettings
 	autocmd!
@@ -46,15 +46,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/Users/snow/.vim/bundle/repos/github.com/Shougo/dein.vim
+set runtimepath+=/hoge/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/Users/snow/.vim/bundle')
-  call dein#begin('/Users/snow/.vim/bundle')
+if dein#load_state('/hoge/.cache/dein')
+  call dein#begin('/hoge/.cache/dein')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/Users/snow/.vim/bundle/repos/github.com/Shougo/dein.vim')
+  call dein#add('/hoge/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
@@ -72,7 +72,7 @@ if dein#load_state('/Users/snow/.vim/bundle')
   call dein#add('reireias/vim-cheatsheet')
   call dein#add('vim-airline/vim-airline')
   call dein#add('lervag/vimtex')
-  call dein#add('zerowidth/vim-copy-as-rtf')
+  "call dein#add('zerowidth/vim-copy-as-rtf')
   "call dein#add('vim-airline/vim-airline-themes')
   "call dein#add('previm/previm')
 
