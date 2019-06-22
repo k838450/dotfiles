@@ -29,6 +29,6 @@ sh ./installer.sh ~/.cache/dein
 cp ./.vimrc  ~/.vimrc
 
 PAHT=$HOME
-sed -i "s/hoge/$PATH/g" .vimrc
+sed -i "s/hoge/$PATH/g" ~/.vimrc
 
 # call dein#install()
