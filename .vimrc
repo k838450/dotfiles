@@ -46,15 +46,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/hoge/.cache/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=hoge/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/hoge/.cache/dein')
-  call dein#begin('/hoge/.cache/dein')
+if dein#load_state('hoge/.cache/dein')
+  call dein#begin('hoge/.cache/dein')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/hoge/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('hoge/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
