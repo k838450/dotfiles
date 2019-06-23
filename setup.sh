@@ -28,7 +28,7 @@ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh >
 sh ./installer.sh ~/.cache/dein
 cp ./.vimrc  ~/.vimrc
 
-PAHT=$HOME
-sed -i "s/hoge/$PATH/g" ~/.vimrc
+HOME=$HOME
+sed -i "s@hoge@$HOME@g" ~/.vimrc
 
 # call dein#install()
